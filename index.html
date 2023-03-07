@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt - BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Projeto Luta</title>
+</head>
+<body>
+
+    <div class="fightarea">
+        <div id="char">
+            <div class="lifebar">
+                <div class="bar" style="width: 10%;"></div>
+            </div>
+            <strong class="name">--</strong>
+            <div>
+                <button class="attackButton">Atacar</button>
+            </div>
+        </div>
+        <div id="monster">
+            <div class="lifebar">
+                <div class="bar" style="width: 10%;"></div>
+            </div>
+            <strong class="name">--</strong>
+            <div>
+                <button class="attackButton" hidden>Atacar</button>
+            </div>
+        </div>
+    </div>
+
+    
+    <ol class="log"></ol>
+
+    <form action="" id="" onsubmit="stopDefAction(event)">
+        <label for="">Você é um: </label>
+        <select name="" class="fight1">
+            <option value="Guerreiro">Guerreiro</option>
+            <option value="Mago">Mago</option>
+        </select>
+        <br>
+        <label for="">Seu inimigo vai ser um: </label>
+        <select name="" class="fight2">
+            <option value="Big Monster">Big Monster</option>
+            <option value="Little Monster">Little Monster</option>
+        </select><br>
+        <input type="submit" name="" id="" onclick="teste()" value="Escolher">
+    </form>
+    <p>Não fique trocando o personagem, escolha apenas uma vez a cada <b>RESET</b></p>
+
+    <div class="restart">
+        <button id="reset" onclick="window.location.reload()">Reset</button>
+    </div>
+
+    <script src="classes.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

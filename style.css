@@ -1,0 +1,61 @@
+.fightarea{
+    display: flex;
+    gap: 20px;
+}
+
+#char, 
+#monster{
+    flex: 1;
+}
+
+.lifebar{
+    height: 10px;
+    border:1px solid gray;
+    border-radius: 5px;
+}
+
+.lifebar .bar{
+    height: inherit;
+    background-color: red;
+    border-radius: 5px;
+}
+
+.log{
+    border: 1px dotted #999;
+    height: 400px;
+    overflow-y: scroll;
+}
+
+button{
+    background-color: #df4a4a;
+    padding: 10px 20px 10px 20px;
+    border: none;
+    border-radius: 20px;
+}
+
+.restart{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.restart > #reset{
+    padding: 10px 70px 10px 70px;
+}
+.restart > #reset:hover, button:hover{
+    background-color:#df4a4a7e;
+}
+
+form > select{
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(255, 0, 0, 0.479);
+    padding: 10px;
+    font-size: 14px;
+}
+
+input[type='submit'] {
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(230, 26, 26, 0.699);
+    padding: 10px 30px;
+}
